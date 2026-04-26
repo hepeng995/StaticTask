@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@plugin "tailwind-scrollbar";
+
+@theme {
+  --color-neon-blue: #00D1FF;
+  --color-neon-pink: #FF5C00;
+  --color-neon-purple: #bc13fe;
+  --color-cyber-bg: #1A1A1A;
+  --color-day-bg: #F4F3EF;
+  --color-ink: #1A1A1A;
+  --color-neon-green: #00FF41;
+  --color-accent: #FF5C00;
+  --color-accent-color: var(--accent-color);
+  
+  --animate-marquee: marquee 20s linear infinite;
+  --animate-neon-pulse: neon-pulse 2s infinite alternate;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  @keyframes neon-pulse {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px var(--color-neon-pink);
+    }
+    to {
+      text-shadow: 0 0 2.5px #fff, 0 0 5px var(--color-neon-pink);
+    }
+  }
+}
+
+@layer base {
+  :root {
+    --bg-color: var(--color-day-bg);
+    --text-color: var(--color-ink);
+    --card-bg: #ffffff;
+    --border-color: var(--color-ink);
+    --accent-color: var(--color-accent);
+    --shadow-color: var(--color-ink);
+    color-scheme: light;
+  }
+
+  .dark {
+    --bg-color: var(--color-cyber-bg);
+    --text-color: var(--color-day-bg);
+    --card-bg: #222222;
+    --border-color: var(--color-day-bg);
+    --accent-color: var(--color-neon-green);
+    --shadow-color: var(--color-day-bg);
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: var(--card-bg) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 2px solid var(--border-color) !important;
+    box-shadow: 4px 4px 0px var(--shadow-color) !important;
+    border-radius: 4px !important;
+    color: var(--text-color) !important;
+  }
+
+  .glass-card:hover {
+    box-shadow: 6px 6px 0px var(--shadow-color) !important;
+    transform: translate(-2px, -2px) !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .neon-text-blue {
+    color: var(--color-neon-blue);
+    text-shadow: 1px 1px 0px var(--color-ink);
+  }
+
+  .neon-text-pink {
+    color: var(--color-accent);
+    text-shadow: 1px 1px 0px var(--color-ink);
+  }
+
+  .neon-box-blue {
+    border: 2px solid var(--border-color);
+    background: var(--color-neon-blue);
+    box-shadow: 4px 4px 0px var(--shadow-color);
+  }
+
+  .neon-box-pink {
+    border: 2px solid var(--border-color);
+    background: var(--color-accent);
+    box-shadow: 4px 4px 0px var(--shadow-color);
+  }
+}
+
+
