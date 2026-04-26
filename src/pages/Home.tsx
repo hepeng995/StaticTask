@@ -80,7 +80,7 @@ export function Home() {
             transition={{ duration: 0.6 }}
             className="relative overflow-hidden border-4 border-black dark:border-white shadow-[8px_8px_0_var(--color-ink)] group"
           >
-            <img src="/大合照.jpeg" className="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-700" alt="大合照" />
+            <img src="./大合照.jpeg" className="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-700" alt="大合照" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </motion.div>
           <motion.div
@@ -90,7 +90,7 @@ export function Home() {
             transition={{ duration: 0.6 }}
             className="relative overflow-hidden border-4 border-black dark:border-white shadow-[8px_8px_0_var(--color-ink)] group"
           >
-            <img src="/大合照2.jpeg" className="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-700" alt="大合照2" />
+            <img src="./大合照2.jpeg" className="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-700" alt="大合照2" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </motion.div>
         </div>

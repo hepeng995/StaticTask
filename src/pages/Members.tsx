@@ -5,12 +5,12 @@ import { BrutalistAmap } from '../components/AmapContainer';
 import React, { useEffect, useState } from 'react';
 
 const MEMBERS = [
-  { id: 1, name: '何祥鹏', role: '后端开发', tag: '核心主导', avatar: '/何祥鹏.png' },
-  { id: 2, name: '余佳', role: '视频剪辑', tag: '视觉叙事', avatar: '/余佳.png' },
-  { id: 3, name: '张凯峰', role: '3D建模', tag: '维度构建', avatar: '/张凯峰.png' },
-  { id: 4, name: '牛青峰', role: '声乐高手', tag: '声波共振', avatar: encodeURI('/牛青峰 (2).png') },
-  { id: 5, name: '段利利', role: '运营', tag: '幕后推手', avatar: '/段利利.jpeg' },
-  { id: 6, name: '袁丹琴', role: '数据分析', tag: '真相洞察', avatar: '/袁丹琴.png' },
+  { id: 1, name: '何祥鹏', role: '后端开发', tag: '核心主导', avatar: './何祥鹏.png' },
+  { id: 2, name: '余佳', role: '视频剪辑', tag: '视觉叙事', avatar: './余佳.png' },
+  { id: 3, name: '张凯峰', role: '3D建模', tag: '维度构建', avatar: './张凯峰.png' },
+  { id: 4, name: '牛青峰', role: '声乐高手', tag: '声波共振', avatar: encodeURI('./牛青峰 (2).png') },
+  { id: 5, name: '段利利', role: '运营', tag: '幕后推手', avatar: './段利利.jpeg' },
+  { id: 6, name: '袁丹琴', role: '数据分析', tag: '真相洞察', avatar: './袁丹琴.png' },
 ];
 
 interface Task {

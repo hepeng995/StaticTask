@@ -10,10 +10,10 @@ const INITIAL_COMMENTS = [
 ];
 
 const VIDEO_RESOURCES: Record<string, { src: string; poster: string; title: string }> = {
-  '1': { src: '/视频.mp4', poster: '/日常.jpeg', title: '开局写个BUG压压惊，祥鹏又在摸鱼了' },
-  '2': { src: '/视频2.mp4', poster: '/日常.jpg', title: '产品经理说这个需求很简单，我反手一个键盘' },
-  '3': { src: '/视频3.mp4', poster: '/日常照.jpeg', title: '昨晚加班到三点，看到代码自己运行了，差点招魂' },
-  '4': { src: encodeURI('/视频4 .mp4'), poster: encodeURI('/日常 (2).jpeg'), title: '如何在服务器里用命令行看《甄嬛传》' },
+  '1': { src: './视频.mp4', poster: './日常.jpeg', title: '开局写个BUG压压惊，祥鹏又在摸鱼了' },
+  '2': { src: './视频2.mp4', poster: './日常.jpg', title: '产品经理说这个需求很简单，我反手一个键盘' },
+  '3': { src: './视频3.mp4', poster: './日常照.jpeg', title: '昨晚加班到三点，看到代码自己运行了，差点招魂' },
+  '4': { src: encodeURI('./视频4 .mp4'), poster: encodeURI('./日常 (2).jpeg'), title: '如何在服务器里用命令行看《甄嬛传》' },
 };
 
 export function VideoDetail() {

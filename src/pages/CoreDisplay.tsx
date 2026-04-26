@@ -16,16 +16,16 @@ interface VideoData {
 }
 
 const VIDEO_RESOURCES = [
-  { src: '/视频.mp4', poster: '/日常.jpeg' },
-  { src: '/视频2.mp4', poster: '/日常.jpg' },
-  { src: '/视频3.mp4', poster: '/日常照.jpeg' },
-  { src: encodeURI('/视频4 .mp4'), poster: encodeURI('/日常 (2).jpeg') },
+  { src: './视频.mp4', poster: './日常.jpeg' },
+  { src: './视频2.mp4', poster: './日常.jpg' },
+  { src: './视频3.mp4', poster: './日常照.jpeg' },
+  { src: encodeURI('./视频4 .mp4'), poster: encodeURI('./日常 (2).jpeg') },
 ];
 
 const SUMMARY_COVERS = [
-  encodeURI('/日常 (7).jpg'),
-  '/大合照.jpeg',
-  '/大合照2.jpeg',
+  encodeURI('./日常 (7).jpg'),
+  './大合照.jpeg',
+  './大合照2.jpeg',
 ];
 
 const INITIAL_VIDEOS: VideoData[] = [

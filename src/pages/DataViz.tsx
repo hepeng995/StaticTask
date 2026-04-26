@@ -46,11 +46,11 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 };
 
 const TIMELINE_IMAGES = [
-  encodeURI('/日常 (2).jpg'),
-  encodeURI('/日常 (3).jpg'),
-  encodeURI('/日常 (4).jpg'),
-  encodeURI('/日常 (5).jpg'),
-  encodeURI('/日常 (6).jpg'),
+  encodeURI('./日常 (2).jpg'),
+  encodeURI('./日常 (3).jpg'),
+  encodeURI('./日常 (4).jpg'),
+  encodeURI('./日常 (5).jpg'),
+  encodeURI('./日常 (6).jpg'),
 ];
 
 const TIMELINE_EVENTS = [

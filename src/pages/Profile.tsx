@@ -3,10 +3,10 @@ import { Mail, Github, BookOpen, GitCommit, LinkIcon, ArrowLeft, Trophy } from '
 import { useParams, Link } from 'react-router-dom';
 
 const POST_COVERS = [
-  '/日常.jpeg', '/日常.jpg', '/日常照.jpeg', encodeURI('/日常 (2).jpeg'),
-  encodeURI('/日常 (2).jpg'), encodeURI('/日常 (3).jpg'), encodeURI('/日常 (4).jpg'),
-  encodeURI('/日常 (5).jpg'), encodeURI('/日常 (6).jpg'), encodeURI('/日常 (7).jpeg'),
-  '/大合照.jpeg', '/大合照2.jpeg',
+  './日常.jpeg', './日常.jpg', './日常照.jpeg', encodeURI('./日常 (2).jpeg'),
+  encodeURI('./日常 (2).jpg'), encodeURI('./日常 (3).jpg'), encodeURI('./日常 (4).jpg'),
+  encodeURI('./日常 (5).jpg'), encodeURI('./日常 (6).jpg'), encodeURI('./日常 (7).jpeg'),
+  './大合照.jpeg', './大合照2.jpeg',
 ];
 
 const MEMBERS_DATA: Record<string, any> = {
@@ -15,7 +15,7 @@ const MEMBERS_DATA: Record<string, any> = {
     role: '后端开发',
     tag: '核心主导',
     desc: '不仅生产代码，还在制造混乱。擅长在没有任何文档的情况下重构核心功能。',
-    avatar: '/何祥鹏.png',
+    avatar: './何祥鹏.png',
     stats: [
       { label: '代码行数', value: '14,204', percent: '80%', color: 'bg-accent-color' },
       { label: '修复BUG数', value: '89', percent: '45%', color: 'bg-neon-blue' },
@@ -31,7 +31,7 @@ const MEMBERS_DATA: Record<string, any> = {
     role: '视频剪辑',
     tag: '视角叙事',
     desc: '每一帧都在燃烧显卡，熟练掌握PR/AE及各类花式转场，能把极其无聊的开会视频剪成大片。',
-    avatar: '/余佳.png',
+    avatar: './余佳.png',
     stats: [
       { label: '渲染输出 (TB)', value: '12.4', percent: '90%', color: 'bg-accent-color' },
       { label: '死机次数', value: '312', percent: '65%', color: 'bg-neon-blue' },
@@ -47,7 +47,7 @@ const MEMBERS_DATA: Record<string, any> = {
     role: '3D建模',
     tag: '维度构建',
     desc: '在三维坐标系中创造神迹，Blender 快捷键比呼吸还要熟练，但是拒绝给人物模型绑骨骼。',
-    avatar: '/张凯峰.png',
+    avatar: './张凯峰.png',
     stats: [
       { label: '构建多边形', value: '8.4M', percent: '95%', color: 'bg-accent-color' },
       { label: '材质节点数', value: '450+', percent: '75%', color: 'bg-neon-blue' },
@@ -63,7 +63,7 @@ const MEMBERS_DATA: Record<string, any> = {
     role: '声乐高手',
     tag: '声波共振',
     desc: '团队的精神核动力源。开着修音软件依然能唱出重金属赛博音效，用歌声掩护后端重启服务器。',
-    avatar: encodeURI('/牛青峰 (2).png'),
+    avatar: encodeURI('./牛青峰 (2).png'),
     stats: [
       { label: '高音突破 (Hz)', value: '1200', percent: '88%', color: 'bg-accent-color' },
       { label: '忘词频率', value: '日常', percent: '80%', color: 'bg-neon-blue' },
@@ -79,7 +79,7 @@ const MEMBERS_DATA: Record<string, any> = {
     role: '运营',
     tag: '幕后推手',
     desc: '熟练掌握各类话术，能够把简单的修Bug包装成”系统底层架构的革命性飞跃”。',
-    avatar: '/段利利.jpeg',
+    avatar: './段利利.jpeg',
     stats: [
       { label: '写出的黑话', value: '8.4k', percent: '90%', color: 'bg-accent-color' },
       { label: '画的大饼数', value: '99+', percent: '85%', color: 'bg-neon-blue' },
@@ -94,7 +94,7 @@ const MEMBERS_DATA: Record<string, any> = {
     role: '数据分析',
     tag: '真相洞察',
     desc: '从一堆杂乱无章的日志中提取出致命证据，总能用图表证明开发又在摸鱼了。',
-    avatar: '/袁丹琴.png',
+    avatar: './袁丹琴.png',
     stats: [
       { label: '导出的表格', value: '3,200', percent: '90%', color: 'bg-accent-color' },
       { label: '崩溃的Pivot', value: '45', percent: '20%', color: 'bg-neon-blue' },
